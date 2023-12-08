@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover seamless event planning and exploration with our innovative event management and finder platform. Find, manage, and explore diverse events effortlessly, powered by a smart recommendation system, ensuring every experience is personalized just for you.">
+    <title>Responsive Navbar</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="http://127.0.0.1:5500/">
+            <h1 class="logo activeLink">
+                    <img src="./imgs/eventhub-nobg.png" alt="eventhub logo">
+                </h1>
+            </a>
+            <button class="navbar-toggler">
+                <span class="icon"></span>
+            </button>
+            <ul class="nav-items-wrapper">
+                <li class="nav-items">
+                    <a href="/index.html" class="nav-item-links">Home</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#reviews" class="nav-item-links">Discover Events</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#contact" class="nav-item-links">Host Event</a>
+                </li>
+                <li class="nav-items">
+                    <a href="#about" class="nav-item-links">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="front-section section">
+            <div class="inner-front-section fs-text-desc">
+                <h1>
+                    The event finder platform that you'll fall in <span class="love">love</span>.
+                </h1>
+                <p>
+                    Discover seamless event planning and a world of diverse gatherings at your fingertips - your
+                    ultimate event finder platform awaits
+                </p>
+                <button class="fs-cta">
+                    Register Now
+                </button>
+            </div>
+            <div class="inner-front-section fs-img">
+                <img src="./imgs/hero-section-bg-image.png" alt="background image for hero section">
+            </div>
+        </section>
+        <section class="features-section section">
+            <div class="features" id="feature1">
+                <div class="fs-img-wrapper">
+                    <img src="./imgs/feature-events1.jpg" alt="concert">
+                </div>
+                <div class="fs-info">
+                    <h4> Event Suggestions</h4> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <p>Tailored Suggestions: Curates events based on preferences, ensuring a personalized experience for
+                        every user.</p>
+                </div>
+            </div>
+            <div class="features" id="feature2">
+                <div class="fs-img-wrapper">
+                    <img src="./imgs/feature-events2.jpg" alt="dj party">
+                </div>
+                <div class="fs-info">
+                    <h4>Manage Your Events</h4> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <p>Simplified Control: Intuitive interface allows easy addition, deletion, and seamless management
+                        of events.</p>
+                </div>
+            </div>
+            <div class="features" id="feature3">
+                <div class="fs-img-wrapper">
+                    <img src="./imgs/feature-events3.jpg" alt="conference">
+                </div>
+                <div class="fs-info">
+                    <h4>Discover New Events</h4> <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <p>Proximity-Based Searches: Helps users discover nearby events and activities, enhancing local
+                        event exploration.</p>
+                </div>
+            </div>
+        </section>
+        <section class="newsletter-section section">
+            <div class="ns-info">
+                <h3>
+                    Subscribe to our Newsletter
+                </h3>
+                <p>
+                    Hey there! We promise—no inbox invasion, just the good stuff! Our newsletter is like that friendly
+                    neighbor who brings cookies, not chaos. Expect updates on exciting events, exclusive deals (nope,
+                    not
+                    the ones cluttering your inbox), and maybe a joke or two
+                </p>
+            </div>
+
+            <div class="email-form">
+                <label for="email" id="email-label"> <input type="email" name="email" id="email" placeholder="Email"
+                        autocomplete="email"></label>
+
+                <button id="subscribe" aria-label="subscribe">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+            </div>
+        </section>
+        <div class="contact-us-section section">
+            <div class="cs-wrapper-1">
+                <div class="cs-head">
+                    <h3>Contact Us</h3>
+                    <p>Got a question? We'd love to hear from you!</p>
+                </div>
+                <div class="location-email">
+                    <div class="location">
+                        <p class="le-head">Our Location</p>
+                        <p class="le-info">Mumbai, Maharashtra, India</p>
+                    </div>
+                    <div class="email">
+                        <p class="le-head">How Can We Help</p>
+                        <p class="le-info">eventhubhelp@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cs-wrapper-2">
+                <h3>Send us a Message</h3>
+                <form action="#" method="post">
+                    <div>
+                        <label for="name">Full Name*</label> <br>
+                        <input type="text" name="name" id="name" placeholder="John Doe" autocomplete="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email*</label> <br>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com" autocomplete="email"
+                            required>
+                    </div>
+                    <div>
+                        <label for="message">Message*</label> <br>
+                        <textarea name="message" id="message" placeholder="We will be pleased to hear from you"
+                            required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <div class="website-cookies-preferences">
+                <a href="#">
+                    Privacy Policy
+                </a>
+                <a href="#">
+                    Terms of Service
+                </a>
+                <a href="#">
+                    Cookie Preferences
+                </a>
+            </div>
+            <ul class="social-media-links">
+                <li>
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa-brands fa-instagram"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa-brands fa-youtube"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa-brands fa-linkedin-in"></a>
+                </li>
+                <li>
+                    <a href="#" class="fa-brands fa-x-twitter"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="rights-reserved">
+            <p>&copy; 2023 Eventhub. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
